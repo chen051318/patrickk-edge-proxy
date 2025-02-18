@@ -22,3 +22,4 @@ ParkingAreaCmdBuildersTest 车行指令构造器测试入口
 二方业务处理：
 HotelDeviceStandardDpConsumer 酒店场景设备上报处理
 SpeechVoiceEventConsumer 音响人声上报处理
+DeviceBinlogConsumer 中台设备binlog责任链式处理
