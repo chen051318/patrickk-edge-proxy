@@ -26,7 +26,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 发卡器写卡片信息指令发送
  *
- * @author liuyang
+ * @author patrickkk
  * @date 2021/6/8 11:26 上午
  */
 @CmdIssueStrategy(productType = "fkq_1w_1", vendorCode = "xinhuo")
