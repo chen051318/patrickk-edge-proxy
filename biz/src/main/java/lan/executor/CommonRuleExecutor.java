@@ -2,12 +2,12 @@
 package lan.executor;
 
 import com.google.common.collect.Lists;
-import com.tuya.jupiter.client.domain.linkage.constants.RuleType;
-import com.tuya.luban.biz.enums.GatewayErrorEnum;
-import com.tuya.luban.biz.service.lan.domains.LanRecoverContext;
-import com.tuya.luban.biz.service.lan.domains.LinkageRule;
-import com.tuya.luban.biz.service.lan.domains.recover.params.SceneErrorParamsDTO;
-import com.tuya.luban.integration.jupiter.ILinkageRuleServiceIntegration;
+import com.x.jupiter.client.domain.linkage.constants.RuleType;
+import com.x.luban.biz.enums.GatewayErrorEnum;
+import com.x.luban.biz.service.lan.domains.LanRecoverContext;
+import com.x.luban.biz.service.lan.domains.LinkageRule;
+import com.x.luban.biz.service.lan.domains.recover.params.SceneErrorParamsDTO;
+import com.x.luban.integration.jupiter.ILinkageRuleServiceIntegration;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.collections.CollectionUtils;
 import org.springframework.stereotype.Component;

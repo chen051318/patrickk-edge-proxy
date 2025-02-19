@@ -1,6 +1,5 @@
 package cmdissue;
 
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
 
 /**
  * @author patrickkk  2021/7/21 14:53

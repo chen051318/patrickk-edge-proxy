@@ -2,9 +2,6 @@ package cmdissue.model.convert;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Lists;
-import com.tuya.edgegateway.client.aipicture.domain.vo.LabelVO;
-import com.tuya.edgegateway.manager.ai.domain.EdgeFacePicLabelDTO;
-import com.tuya.sagittarius.client.domain.ai.face.vo.FaceAttributeVO;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.util.CollectionUtils;
 

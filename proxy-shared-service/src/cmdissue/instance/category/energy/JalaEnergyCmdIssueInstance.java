@@ -2,17 +2,6 @@ package cmdissue.instance.category.energy;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.tuya.edgegateway.client.common.ServiceResult;
-import com.tuya.edgegateway.client.common.ServiceResultCode;
-import com.tuya.edgegateway.integration.service.jala.IJalaBridgeServiceClient;
-import com.tuya.edgegateway.integration.service.jala.domain.request.*;
-import com.tuya.edgegateway.integration.service.jala.impl.JalaValueRangeConfig;
-import com.tuya.edgegateway.manager.base.exception.EdgeException;
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
-import com.tuya.edgegateway.manager.cmdissue.domain.IssueDataCmdResultDTO;
-import com.tuya.edgegateway.manager.device.IDeviceManager;
-import com.tuya.edgegateway.manager.device.domain.DeviceDTO;
-import com.tuya.edgegateway.manager.device.domain.constants.DevExtKeyConstants;
 import cmdissue.ICmdIssueSharedService;
 import cmdissue.instance.CmdIssueStrategy;
 import cmdissue.instance.DefaultCmdIssueInstance;

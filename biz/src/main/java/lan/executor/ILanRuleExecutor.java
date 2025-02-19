@@ -1,9 +1,9 @@
 
 package lan.executor;
 
-import com.tuya.luban.biz.common.executor.IExecutor;
-import com.tuya.luban.biz.service.lan.domains.LanRecoverContext;
-import com.tuya.luban.biz.service.lan.domains.LinkageRule;
+import com.x.luban.biz.common.executor.IExecutor;
+import com.x.luban.biz.service.lan.domains.LanRecoverContext;
+import com.x.luban.biz.service.lan.domains.LinkageRule;
 
 /**
  * 无网场景恢复

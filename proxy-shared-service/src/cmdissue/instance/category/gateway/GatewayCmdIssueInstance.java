@@ -2,13 +2,8 @@ package cmdissue.instance.category.gateway;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.tuya.edgegateway.client.domain.ndp.enums.OP;
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
-import com.tuya.edgegateway.manager.device.IDeviceExtManager;
-import com.tuya.edgegateway.manager.device.domain.DeviceExtDTO;
 import cmdissue.instance.CmdIssueStrategy;
 import cmdissue.instance.DefaultCmdIssueInstance;
-import com.tuya.edgegateway.shared.service.device.IDevicePropExtSharedService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
@@ -30,7 +25,7 @@ public class GatewayCmdIssueInstance extends DefaultCmdIssueInstance {
     private static final List<String> modeList = Arrays.asList(
             "ai_alg_webcam_rel", //算法节点和子设备的关联关系 新增和删除
             "ai_trans_webcam_rel", //流传输节点和子设备的关系
-            "ai_thirdcamserial_rel"//超脑三方相机序列号和tuya摄像头设备cid关系
+            "ai_thirdcamserial_rel"//超脑三方相机序列号和x摄像头设备cid关系
     );
 
     @Resource

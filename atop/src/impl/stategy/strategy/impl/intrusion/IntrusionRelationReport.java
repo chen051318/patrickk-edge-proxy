@@ -1,12 +1,12 @@
 package impl.stategy.strategy.impl.intrusion;
 
 import com.alibaba.fastjson.JSONArray;
-import com.tuya.atop.client.domain.api.ApiRequestDO;
-import com.tuya.edgegateway.atop.device.impl.strategy.IDeviceReport;
-import com.tuya.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
-import com.tuya.edgegateway.common.model.DeviceStrategy;
-import com.tuya.edgegateway.manager.kafka.domain.KafkaDeviceUploadStringMessage;
-import com.tuya.edgegateway.manager.kafka.producer.IKafkaIntrusionMsgProducer;
+import com.x.atop.client.domain.api.ApiRequestDO;
+import com.x.edgegateway.atop.device.impl.strategy.IDeviceReport;
+import com.x.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
+import com.x.edgegateway.common.model.DeviceStrategy;
+import com.x.edgegateway.manager.kafka.domain.KafkaDeviceUploadStringMessage;
+import com.x.edgegateway.manager.kafka.producer.IKafkaIntrusionMsgProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;

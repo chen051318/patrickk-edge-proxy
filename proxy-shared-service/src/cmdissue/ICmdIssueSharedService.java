@@ -1,13 +1,5 @@
 package cmdissue;
 
-import com.tuya.edgegateway.client.common.PageResult;
-import com.tuya.edgegateway.client.common.Paging;
-import com.tuya.edgegateway.client.domain.cmd.IssueCmdResultVO;
-import com.tuya.edgegateway.client.domain.cmd.constants.CmdPriorityEnum;
-import com.tuya.edgegateway.client.domain.ndp.common.ICmd;
-import com.tuya.edgegateway.core.cmdissue.domain.CmdIssueRecordQuery;
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
-import com.tuya.edgegateway.manager.cmdissue.domain.IssueDataCmdResultDTO;
 
 /**
  * @author: patrickkk

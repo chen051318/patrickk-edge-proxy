@@ -1,12 +1,12 @@
 
 package lan;
 
-import com.tuya.luban.biz.enums.GatewayErrorEnum;
-import com.tuya.luban.biz.service.lan.domains.ConfigInfo;
-import com.tuya.luban.biz.service.lan.domains.recover.GatewayRecoverDTO;
-import com.tuya.luban.biz.service.lan.domains.recover.RecoverResultDTO;
-import com.tuya.luban.biz.service.lan.domains.recover.RetryRecoverDTO;
-import com.tuya.luban.core.dao.domains.meta.LubanTaskRecord;
+import com.x.luban.biz.enums.GatewayErrorEnum;
+import com.x.luban.biz.service.lan.domains.ConfigInfo;
+import com.x.luban.biz.service.lan.domains.recover.GatewayRecoverDTO;
+import com.x.luban.biz.service.lan.domains.recover.RecoverResultDTO;
+import com.x.luban.biz.service.lan.domains.recover.RetryRecoverDTO;
+import com.x.luban.core.dao.domains.meta.LubanTaskRecord;
 
 import java.util.List;
 import java.util.Map;

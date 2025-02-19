@@ -1,6 +1,6 @@
 package cmddevice.bean.ota;
 
-import com.tuya.edgegateway.client.domain.ndp.common.CmdSupport;
+import com.x.edgegateway.client.domain.ndp.common.CmdSupport;
 import lombok.Getter;
 import lombok.Setter;
 

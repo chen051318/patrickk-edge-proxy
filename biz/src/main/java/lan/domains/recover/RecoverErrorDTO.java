@@ -2,8 +2,8 @@
 package lan.domains.recover;
 
 import com.alibaba.fastjson.JSON;
-import com.tuya.luban.biz.util.I18nUtils;
-import com.tuya.luban.core.dao.domains.recover.GatewayRecoverErrorDO;
+import com.x.luban.biz.util.I18nUtils;
+import com.x.luban.core.dao.domains.recover.GatewayRecoverErrorDO;
 import lombok.Data;
 import org.apache.commons.lang.text.StrSubstitutor;
 

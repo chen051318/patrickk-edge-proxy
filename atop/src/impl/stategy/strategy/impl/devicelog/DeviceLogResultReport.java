@@ -1,13 +1,13 @@
 package impl.stategy.strategy.impl.devicelog;
 
 import com.alibaba.fastjson.JSON;
-import com.tuya.atop.client.domain.api.ApiRequestDO;
-import com.tuya.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
-import com.tuya.edgegateway.atop.device.impl.strategy.impl.AbstractReportProcessor;
-import com.tuya.edgegateway.common.model.DeviceStrategy;
-import com.tuya.edgegateway.manager.base.utils.BeanPropertyCopyUtils;
-import com.tuya.edgegateway.shared.service.log.DeviceLogUploadDTO;
-import com.tuya.edgegateway.shared.service.log.ILogRecordSharedService;
+import com.x.atop.client.domain.api.ApiRequestDO;
+import com.x.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
+import com.x.edgegateway.atop.device.impl.strategy.impl.AbstractReportProcessor;
+import com.x.edgegateway.common.model.DeviceStrategy;
+import com.x.edgegateway.manager.base.utils.BeanPropertyCopyUtils;
+import com.x.edgegateway.shared.service.log.DeviceLogUploadDTO;
+import com.x.edgegateway.shared.service.log.ILogRecordSharedService;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 

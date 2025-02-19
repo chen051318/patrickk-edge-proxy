@@ -1,6 +1,6 @@
 package impl.stategy.strategy;
 
-import com.tuya.atop.client.domain.api.ApiRequestDO;
+import com.x.atop.client.domain.api.ApiRequestDO;
 
 /**
  * @author patrickkk

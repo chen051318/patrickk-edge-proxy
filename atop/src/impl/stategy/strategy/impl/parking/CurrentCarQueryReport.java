@@ -1,15 +1,15 @@
 package impl.stategy.strategy.impl.parking;
 
 import com.alibaba.fastjson.JSON;
-import com.tuya.atop.client.domain.api.ApiRequestDO;
-import com.tuya.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
-import com.tuya.edgegateway.atop.device.impl.strategy.impl.AbstractReportProcessor;
-import com.tuya.edgegateway.client.domain.cmd.constants.CmdBizTypeEnum;
-import com.tuya.edgegateway.core.util.sensitivelog.LogMarkers;
-import com.tuya.edgegateway.manager.base.utils.BeanPropertyCopyUtils;
-import com.tuya.edgegateway.manager.device.IGatewayManager;
-import com.tuya.edgegateway.manager.device.domain.GatewayDTO;
-import com.tuya.edgegateway.manager.pa.domain.CurrentCarDTO;
+import com.x.atop.client.domain.api.ApiRequestDO;
+import com.x.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
+import com.x.edgegateway.atop.device.impl.strategy.impl.AbstractReportProcessor;
+import com.x.edgegateway.client.domain.cmd.constants.CmdBizTypeEnum;
+import com.x.edgegateway.core.util.sensitivelog.LogMarkers;
+import com.x.edgegateway.manager.base.utils.BeanPropertyCopyUtils;
+import com.x.edgegateway.manager.device.IGatewayManager;
+import com.x.edgegateway.manager.device.domain.GatewayDTO;
+import com.x.edgegateway.manager.pa.domain.CurrentCarDTO;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -3,17 +3,17 @@ package lan.executor;
 
 import com.alibaba.fastjson.JSONArray;
 import com.google.common.collect.Lists;
-import com.tuya.jupiter.client.domain.linkage.LinkageRuleBindDO;
-import com.tuya.jupiter.client.domain.linkage.constants.RuleBindType;
-import com.tuya.jupiter.client.domain.linkage.vo.LinkageActionVO;
-import com.tuya.jupiter.client.domain.linkage.vo.LinkageConditionVO;
-import com.tuya.luban.biz.enums.GatewayErrorEnum;
-import com.tuya.luban.biz.service.lan.domains.LanRecoverContext;
-import com.tuya.luban.biz.service.lan.domains.LinkageRule;
-import com.tuya.luban.biz.service.lan.domains.MetaInfo;
-import com.tuya.luban.biz.service.lan.domains.recover.params.DeviceErrorParamsDTO;
-import com.tuya.luban.client.enums.RuleConstant;
-import com.tuya.luban.integration.jupiter.ILinkageRuleBindIntegration;
+import com.x.jupiter.client.domain.linkage.LinkageRuleBindDO;
+import com.x.jupiter.client.domain.linkage.constants.RuleBindType;
+import com.x.jupiter.client.domain.linkage.vo.LinkageActionVO;
+import com.x.jupiter.client.domain.linkage.vo.LinkageConditionVO;
+import com.x.luban.biz.enums.GatewayErrorEnum;
+import com.x.luban.biz.service.lan.domains.LanRecoverContext;
+import com.x.luban.biz.service.lan.domains.LinkageRule;
+import com.x.luban.biz.service.lan.domains.MetaInfo;
+import com.x.luban.biz.service.lan.domains.recover.params.DeviceErrorParamsDTO;
+import com.x.luban.client.enums.RuleConstant;
+import com.x.luban.integration.jupiter.ILinkageRuleBindIntegration;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

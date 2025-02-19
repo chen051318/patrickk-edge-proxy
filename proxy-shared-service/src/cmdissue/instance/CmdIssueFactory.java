@@ -1,8 +1,6 @@
 package cmdissue.instance;
 
 import com.alibaba.fastjson.JSON;
-import com.tuya.edgegateway.manager.base.configuration.ApplicationHelper;
-import com.tuya.edgegateway.manager.base.exception.EdgeException;
 import lombok.extern.slf4j.Slf4j;
 import org.reflections.Reflections;
 import org.springframework.stereotype.Service;
@@ -27,7 +25,7 @@ public class CmdIssueFactory {
 
     @PostConstruct
     private void init() {
-        Reflections reflections = new Reflections("com.tuya.edgegateway.shared.service.cmdissue.instance.category");
+        Reflections reflections = new Reflections("com.x.edgegateway.shared.service.cmdissue.instance.category");
         Set<Class<?>> annotatedClasses =
                 reflections.getTypesAnnotatedWith(CmdIssueStrategy.class);
 

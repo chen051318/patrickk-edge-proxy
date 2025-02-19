@@ -1,22 +1,22 @@
 import com.alibaba.fastjson.JSON;
-import com.tuya.edgegateway.client.domain.ndp.CmdBuilderFactory;
-import com.tuya.edgegateway.client.domain.ndp.common.ICmd;
-import com.tuya.edgegateway.client.domain.ndp.common.IssueDataCmd;
-import com.tuya.edgegateway.client.domain.ndp.pa.ParkingCoupon.ParkingCouponDataAdd;
-import com.tuya.edgegateway.client.domain.ndp.pa.ParkingGroup.ParkingGroupDataAdd;
-import com.tuya.edgegateway.client.domain.ndp.pa.ParkingGroup.ParkingGroupDataDel;
-import com.tuya.edgegateway.client.domain.ndp.pa.ParkingGroup.ParkingGroupDataUpdate;
-import com.tuya.edgegateway.client.domain.ndp.pa.ResidentCarPermission.Car;
-import com.tuya.edgegateway.client.domain.ndp.pa.ResidentCarPermission.ResidentCarPermissionDataAdd;
-import com.tuya.edgegateway.client.domain.ndp.pa.ResidentCarPermission.ResidentCarPermissionDataDel;
-import com.tuya.edgegateway.client.domain.ndp.pa.ResidentCarPermission.ResidentCarPermissionDataUpdate;
-import com.tuya.edgegateway.client.domain.ndp.pa.VisitorCarPermission.VisitorCarPermissionDataAdd;
-import com.tuya.edgegateway.client.domain.ndp.pa.VisitorCarPermission.VisitorCarPermissionDataDel;
-import com.tuya.edgegateway.client.domain.ndp.pa.VisitorCarPermission.VisitorCarPermissionDataUpdate;
-import com.tuya.edgegateway.client.domain.ndp.pa.parkdevice.ParkingDeviceCmd;
-import com.tuya.edgegateway.client.domain.ndp.pa.parkingOrder.ParkingOrderDataAdd;
-import com.tuya.edgegateway.client.domain.ndp.pa.parkinggate.ParkingGateControlCmd;
-import com.tuya.edgegateway.client.domain.ndp.pa.parkinglanes.ParkingLanesCmd;
+import com.x.edgegateway.client.domain.ndp.CmdBuilderFactory;
+import com.x.edgegateway.client.domain.ndp.common.ICmd;
+import com.x.edgegateway.client.domain.ndp.common.IssueDataCmd;
+import com.x.edgegateway.client.domain.ndp.pa.ParkingCoupon.ParkingCouponDataAdd;
+import com.x.edgegateway.client.domain.ndp.pa.ParkingGroup.ParkingGroupDataAdd;
+import com.x.edgegateway.client.domain.ndp.pa.ParkingGroup.ParkingGroupDataDel;
+import com.x.edgegateway.client.domain.ndp.pa.ParkingGroup.ParkingGroupDataUpdate;
+import com.x.edgegateway.client.domain.ndp.pa.ResidentCarPermission.Car;
+import com.x.edgegateway.client.domain.ndp.pa.ResidentCarPermission.ResidentCarPermissionDataAdd;
+import com.x.edgegateway.client.domain.ndp.pa.ResidentCarPermission.ResidentCarPermissionDataDel;
+import com.x.edgegateway.client.domain.ndp.pa.ResidentCarPermission.ResidentCarPermissionDataUpdate;
+import com.x.edgegateway.client.domain.ndp.pa.VisitorCarPermission.VisitorCarPermissionDataAdd;
+import com.x.edgegateway.client.domain.ndp.pa.VisitorCarPermission.VisitorCarPermissionDataDel;
+import com.x.edgegateway.client.domain.ndp.pa.VisitorCarPermission.VisitorCarPermissionDataUpdate;
+import com.x.edgegateway.client.domain.ndp.pa.parkdevice.ParkingDeviceCmd;
+import com.x.edgegateway.client.domain.ndp.pa.parkingOrder.ParkingOrderDataAdd;
+import com.x.edgegateway.client.domain.ndp.pa.parkinggate.ParkingGateControlCmd;
+import com.x.edgegateway.client.domain.ndp.pa.parkinglanes.ParkingLanesCmd;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -50,7 +50,7 @@ public class ParkingAreaCmdBuildersTest {
                 .withBeginTime(System.currentTimeMillis())
                 .withEndTime(System.currentTimeMillis())
                 .withId("001")
-                .withParkingGroupNo("tuyaceshi")
+                .withParkingGroupNo("xceshi")
                 .withCar(new Car("浙A23456", "李四", new String[] {"1", "2", "3"}, "12312312312313123123"))
                 .withCar(new Car("浙A12345", "张三", new String[] {"1", "2", "3"}, "12312312312313123123"))
                 .withCar(new Car("浙A79190", "王二", new String[] {"1", "2", "3"}, "12312312312313123123"))
@@ -68,8 +68,8 @@ public class ParkingAreaCmdBuildersTest {
                 .withBeginTime(System.currentTimeMillis())
                 .withEndTime(System.currentTimeMillis())
                 .withId("002")
-                .withParkingGroupNo("tuyaceshi")
-                .withCar(new Car("浙A23456", "tuya", new String[] {"1", "2", "3"}))
+                .withParkingGroupNo("xceshi")
+                .withCar(new Car("浙A23456", "x", new String[] {"1", "2", "3"}))
                 .withCar(new Car("浙A34567", "张三", new String[] {"1", "2", "3"}))
                 .parentBuilder()
                 .build();
@@ -97,7 +97,7 @@ public class ParkingAreaCmdBuildersTest {
                 .withEndTime(System.currentTimeMillis())
                 .withUserId("1234")
                 .withVisitorId("2345")
-                .withVisitorName("涂鸦")
+                .withVisitorName("xx")
                 .parentBuilder()
                 .build();
         Assert.assertEquals(issueDataCmd.getDpid(), new Integer(1));
@@ -114,7 +114,7 @@ public class ParkingAreaCmdBuildersTest {
                 .withEndTime(System.currentTimeMillis())
                 .withUserId("1234")
                 .withVisitorId("4567")
-                .withVisitorName("tuya1")
+                .withVisitorName("x1")
                 .parentBuilder()
                 .build();
         Assert.assertEquals(issueDataCmd.getDpid(), new Integer(1));

@@ -1,11 +1,11 @@
 
 package lan.domains;
 
-import com.tuya.jupiter.client.domain.linkage.constants.ActionExecutorType;
-import com.tuya.jupiter.client.domain.linkage.vo.LinkageActionVO;
-import com.tuya.jupiter.client.domain.linkage.vo.LinkageConditionVO;
-import com.tuya.jupiter.client.domain.linkage.vo.LinkageRuleVO;
-import com.tuya.luban.client.enums.RuleConstant;
+import com.x.jupiter.client.domain.linkage.constants.ActionExecutorType;
+import com.x.jupiter.client.domain.linkage.vo.LinkageActionVO;
+import com.x.jupiter.client.domain.linkage.vo.LinkageConditionVO;
+import com.x.jupiter.client.domain.linkage.vo.LinkageRuleVO;
+import com.x.luban.client.enums.RuleConstant;
 import lombok.Getter;
 import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;
@@ -66,7 +66,7 @@ public class LinkageRule extends LinkageRuleVO {
     /**
      * 场景类型
      * 
-     * @see com.tuya.luban.client.enums.RuleConstant
+     * @see com.x.luban.client.enums.RuleConstant
      */
     private Integer linkageRuleType;
 

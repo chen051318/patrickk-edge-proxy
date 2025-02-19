@@ -1,9 +1,5 @@
 package cmdissue;
 
-import com.tuya.edgegateway.client.common.PageResult;
-import com.tuya.edgegateway.client.common.ServiceResult;
-import com.tuya.edgegateway.client.domain.gateway.*;
-
 import java.util.List;
 
 /**

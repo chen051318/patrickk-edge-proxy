@@ -1,13 +1,5 @@
 package cmdissue.instance.category.znwg;
 
-import com.tuya.edgegateway.client.cfg.domain.vo.FunctionSimpleCfgVO;
-import com.tuya.edgegateway.client.common.ServiceResult;
-import com.tuya.edgegateway.client.netscheme.IDeviceFunctionService;
-import com.tuya.edgegateway.integration.service.neat.INeatCmdIssueServiceClient;
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
-import com.tuya.edgegateway.manager.cmdissue.domain.IssueDataCmdResultDTO;
-import com.tuya.edgegateway.manager.device.IDeviceManager;
-import com.tuya.edgegateway.manager.device.domain.DeviceDTO;
 import cmdissue.ICmdIssueSharedService;
 import cmdissue.instance.CmdIssueStrategy;
 import cmdissue.instance.DefaultCmdIssueInstance;

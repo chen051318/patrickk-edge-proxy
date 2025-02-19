@@ -1,7 +1,7 @@
 import com.alibaba.fastjson.JSON;
-import com.tuya.edgegateway.client.domain.ndp.CmdBuilderFactory;
-import com.tuya.edgegateway.client.domain.ndp.common.ICmd;
-import com.tuya.edgegateway.client.domain.ndp.ec.cmd.ElevatorControlCmd;
+import com.x.edgegateway.client.domain.ndp.CmdBuilderFactory;
+import com.x.edgegateway.client.domain.ndp.common.ICmd;
+import com.x.edgegateway.client.domain.ndp.ec.cmd.ElevatorControlCmd;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

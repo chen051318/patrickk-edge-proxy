@@ -1,8 +1,8 @@
 package consumer.binlog.node;
 
-import com.tuya.assembly.data.watch.client.domain.DataBaseFieldDO;
-import com.tuya.kunlun.biz.utils.ConvertUtils;
-import com.tuya.kunlun.common.Constant;
+import com.x.assembly.data.watch.client.domain.DataBaseFieldDO;
+import com.x.kunlun.biz.utils.ConvertUtils;
+import com.x.kunlun.common.Constant;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

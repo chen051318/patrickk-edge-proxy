@@ -1,6 +1,5 @@
 package cmdissue.instance.category.znyg;
 
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
 import cmdissue.instance.CmdIssueStrategy;
 import cmdissue.instance.DefaultCmdIssueInstance;
 import cmdissue.instance.ICmdIssueInstance;

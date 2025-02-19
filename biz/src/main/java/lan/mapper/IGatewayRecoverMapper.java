@@ -1,8 +1,8 @@
 
 package lan.mapper;
 
-import com.tuya.luban.biz.service.lan.domains.recover.GatewayRecoverDTO;
-import com.tuya.luban.core.dao.domains.recover.GatewayRecoverDO;
+import com.x.luban.biz.service.lan.domains.recover.GatewayRecoverDTO;
+import com.x.luban.core.dao.domains.recover.GatewayRecoverDO;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 

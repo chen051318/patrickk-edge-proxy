@@ -2,28 +2,28 @@ package consumer;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.tuya.basic.mq.domain.KafkaMqData;
-import com.tuya.hotel.biz.datapoint.base.AbstractDeviceDpConsumerService;
-import com.tuya.hotel.biz.datapoint.base.DeviceDpConsumerCategoryCode2BeanNamePrefixMapper;
-import com.tuya.hotel.biz.datapoint.base.DeviceDpConsumerServiceHelper;
-import com.tuya.hotel.biz.datapoint.bo.DeviceDpBO;
-import com.tuya.hotel.biz.device.service.IDeviceBizService;
-import com.tuya.hotel.biz.es.HotelDeviceEsService;
-import com.tuya.hotel.biz.es.HotelEsDeviceDO;
-import com.tuya.hotel.biz.merchant.IHotelMerchantService;
-import com.tuya.hotel.common.config.HotelConfigService;
-import com.tuya.hotel.common.constant.RedisKey;
-import com.tuya.hotel.common.enums.HotelCategoryCodeEnum;
-import com.tuya.hotel.common.util.HotelRandomUtils;
-import com.tuya.hotel.common.util.HotelRedisClient;
-import com.tuya.hotel.common.util.IRedisClient;
-import com.tuya.hotel.mq.dto.DeviceStandardDpDetailKafkaDTO;
-import com.tuya.hotel.mq.dto.DeviceStandardDpInfo;
-import com.tuya.hotel.mq.dto.DeviceStandardDpKafkaDTO;
-import com.tuya.smart.client.domain.device.DataPointDO;
-import com.tuya.vienna.monitor.concurrent.RunnableWrapper;
-import com.tuya.vienna.monitor.concurrent.ThreadPoolExecutorHelper;
-import com.tuya.vienna.monitor.kafka.AbstractKafkaConsumer;
+import com.x.basic.mq.domain.KafkaMqData;
+import com.x.hotel.biz.datapoint.base.AbstractDeviceDpConsumerService;
+import com.x.hotel.biz.datapoint.base.DeviceDpConsumerCategoryCode2BeanNamePrefixMapper;
+import com.x.hotel.biz.datapoint.base.DeviceDpConsumerServiceHelper;
+import com.x.hotel.biz.datapoint.bo.DeviceDpBO;
+import com.x.hotel.biz.device.service.IDeviceBizService;
+import com.x.hotel.biz.es.HotelDeviceEsService;
+import com.x.hotel.biz.es.HotelEsDeviceDO;
+import com.x.hotel.biz.merchant.IHotelMerchantService;
+import com.x.hotel.common.config.HotelConfigService;
+import com.x.hotel.common.constant.RedisKey;
+import com.x.hotel.common.enums.HotelCategoryCodeEnum;
+import com.x.hotel.common.util.HotelRandomUtils;
+import com.x.hotel.common.util.HotelRedisClient;
+import com.x.hotel.common.util.IRedisClient;
+import com.x.hotel.mq.dto.DeviceStandardDpDetailKafkaDTO;
+import com.x.hotel.mq.dto.DeviceStandardDpInfo;
+import com.x.hotel.mq.dto.DeviceStandardDpKafkaDTO;
+import com.x.smart.client.domain.device.DataPointDO;
+import com.x.vienna.monitor.concurrent.RunnableWrapper;
+import com.x.vienna.monitor.concurrent.ThreadPoolExecutorHelper;
+import com.x.vienna.monitor.kafka.AbstractKafkaConsumer;
 import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
@@ -39,13 +39,13 @@ import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Collectors;
 
-import static com.tuya.hotel.common.constant.HotelConstant.VIRTUAL_KG_DEVICE;
-import static com.tuya.hotel.common.constant.RedisKey.DEVICE_DP_HIGH_FREQUENCY_REPORTING;
-import static com.tuya.hotel.common.constant.RedisKey.buildRedisKey;
+import static com.x.hotel.common.constant.HotelConstant.VIRTUAL_KG_DEVICE;
+import static com.x.hotel.common.constant.RedisKey.DEVICE_DP_HIGH_FREQUENCY_REPORTING;
+import static com.x.hotel.common.constant.RedisKey.buildRedisKey;
 
 /**
  *
- * @Author: chenzp@tuya.com patrickkk
+ * @Author: chenzp@x.com patrickkk
  * @date: 2020-05-23
  * @description: 设备dp上报的dp_code标准化后的消息消费逻辑
  */

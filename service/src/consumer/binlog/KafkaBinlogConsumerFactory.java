@@ -1,7 +1,7 @@
 package consumer.binlog;
 
-import com.tuya.assembly.data.watch.client.domain.DataBaseWatchDO;
-import com.tuya.basic.mq.domain.KafkaMqData;
+import com.x.assembly.data.watch.client.domain.DataBaseWatchDO;
+import com.x.basic.mq.domain.KafkaMqData;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

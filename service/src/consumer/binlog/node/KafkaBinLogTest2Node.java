@@ -1,7 +1,7 @@
 package consumer.binlog.node;
 
-import com.tuya.assembly.data.watch.client.domain.DataBaseFieldDO;
-import com.tuya.kunlun.biz.chain.kafka.binlog.annotation.KafkaBinLogTable;
+import com.x.assembly.data.watch.client.domain.DataBaseFieldDO;
+import com.x.kunlun.biz.chain.kafka.binlog.annotation.KafkaBinLogTable;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;

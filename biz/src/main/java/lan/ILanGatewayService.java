@@ -1,7 +1,7 @@
 
 package lan;
 
-import com.tuya.luban.client.domains.response.recover.GatewayRecoverProgressDTO;
+import com.x.luban.client.domains.response.recover.GatewayRecoverProgressDTO;
 
 import java.util.LinkedHashMap;
 

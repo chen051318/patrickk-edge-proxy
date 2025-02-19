@@ -1,11 +1,11 @@
 package impl.stategy.strategy;
 
 import com.alibaba.fastjson.JSON;
-import com.tuya.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
-import com.tuya.edgegateway.manager.base.configuration.ApplicationHelper;
-import com.tuya.edgegateway.manager.base.exception.EdgeException;
-import com.tuya.edgegateway.manager.base.exception.EdgeExceptionCode;
-import com.tuya.edgegateway.manager.base.utils.ExceptionUtils;
+import com.x.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
+import com.x.edgegateway.manager.base.configuration.ApplicationHelper;
+import com.x.edgegateway.manager.base.exception.EdgeException;
+import com.x.edgegateway.manager.base.exception.EdgeExceptionCode;
+import com.x.edgegateway.manager.base.utils.ExceptionUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.reflections.Reflections;
 import org.springframework.stereotype.Service;
@@ -31,7 +31,7 @@ public class StrategyFactoryContext{
 
     @PostConstruct
     private void init() {
-        Reflections reflections = new Reflections("com.tuya.edgegateway.atop.device.impl.strategy.impl");
+        Reflections reflections = new Reflections("com.x.edgegateway.atop.device.impl.strategy.impl");
         Set<Class<?>> annotatedClasses =
                 reflections.getTypesAnnotatedWith(EdgeStrategy.class);
         allStrategies = new ConcurrentHashMap<>(16);

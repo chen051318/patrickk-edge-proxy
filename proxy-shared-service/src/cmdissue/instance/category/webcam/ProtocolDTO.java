@@ -1,6 +1,5 @@
 package cmdissue.instance.category.webcam;
 
-import com.tuya.edgegateway.client.common.BaseBean;
 import lombok.Getter;
 import lombok.Setter;
 

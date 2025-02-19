@@ -1,6 +1,6 @@
 package cmdissue.instance;
 
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
+import com.x.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
 
 /**
  * 指令发送实例接口

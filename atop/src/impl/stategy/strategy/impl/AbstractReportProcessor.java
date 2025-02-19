@@ -1,10 +1,10 @@
 package impl.stategy.strategy.impl;
 
-import com.tuya.edgegateway.atop.device.impl.strategy.IDeviceReport;
-import com.tuya.edgegateway.client.domain.cmd.constants.CmdBizTypeEnum;
-import com.tuya.edgegateway.core.util.sensitivelog.LogMarkers;
-import com.tuya.edgegateway.manager.cmdissue.domain.IssueDataCmdResultDTO;
-import com.tuya.edgegateway.shared.service.cmdissue.ICmdIssueSharedService;
+import com.x.edgegateway.atop.device.impl.strategy.IDeviceReport;
+import com.x.edgegateway.client.domain.cmd.constants.CmdBizTypeEnum;
+import com.x.edgegateway.core.util.sensitivelog.LogMarkers;
+import com.x.edgegateway.manager.cmdissue.domain.IssueDataCmdResultDTO;
+import com.x.edgegateway.shared.service.cmdissue.ICmdIssueSharedService;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.annotation.Resource;

@@ -1,15 +1,15 @@
 package cmddevice.builders;
 
-import com.tuya.edgegateway.client.domain.ndp.common.IssueDataCmdBuilder;
-import com.tuya.edgegateway.client.domain.ndp.dc._234.OpenDoorCmdBuilder;
-import com.tuya.edgegateway.client.domain.ndp.dc.cardinfo.*;
-import com.tuya.edgegateway.client.domain.ndp.dc.doorbell.AppCallDeviceCmdBuilder;
-import com.tuya.edgegateway.client.domain.ndp.dc.doorbell.DoorBellCmdBuilder;
-import com.tuya.edgegateway.client.domain.ndp.dc.faceinfo.*;
-import com.tuya.edgegateway.client.domain.ndp.dc.maintain.DeviceMaintainCmdBuilder;
-import com.tuya.edgegateway.client.domain.ndp.dc.passpwd.*;
-import com.tuya.edgegateway.client.domain.ndp.dc.qrcodeinfo.*;
-import com.tuya.edgegateway.client.domain.ndp.dc.userinfo.*;
+import com.x.edgegateway.client.domain.ndp.common.IssueDataCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.dc._234.OpenDoorCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.dc.cardinfo.*;
+import com.x.edgegateway.client.domain.ndp.dc.doorbell.AppCallDeviceCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.dc.doorbell.DoorBellCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.dc.faceinfo.*;
+import com.x.edgegateway.client.domain.ndp.dc.maintain.DeviceMaintainCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.dc.passpwd.*;
+import com.x.edgegateway.client.domain.ndp.dc.qrcodeinfo.*;
+import com.x.edgegateway.client.domain.ndp.dc.userinfo.*;
 
 /**
  * @author: patrickkk

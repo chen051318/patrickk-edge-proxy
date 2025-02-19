@@ -1,6 +1,5 @@
 package cmdissue.instance.category;
 
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
 import cmdissue.instance.CmdIssueStrategy;
 import cmdissue.instance.DefaultCmdIssueInstance;
 import lombok.extern.slf4j.Slf4j;

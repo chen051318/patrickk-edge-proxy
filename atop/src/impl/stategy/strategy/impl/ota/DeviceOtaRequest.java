@@ -1,6 +1,6 @@
 package impl.stategy.strategy.impl.ota;
 
-import com.tuya.edgegateway.client.common.BaseBean;
+import com.x.edgegateway.client.common.BaseBean;
 import lombok.Getter;
 import lombok.Setter;
 

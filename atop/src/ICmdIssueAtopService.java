@@ -1,10 +1,6 @@
-import com.tuya.atop.client.domain.api.ApiRequestDO;
-import com.tuya.atop.client.domain.common.AtopResult;
-import com.tuya.edgegateway.client.domain.cmd.IssueCmdResultVO;
-import com.tuya.edgegateway.client.domain.cmd.IssueDataCmdInfoVO;
 
 /**
- * 指令发送atop接口
+ * 指令发送接口
  *
  * @author patrickkk  2020/10/21 16:38
  */
@@ -23,7 +19,7 @@ public interface ICmdIssueAtopService {
      * @param cmdJson
      * @param apiRequestDO
      * @return
-     * @clientApi  tuya.industry.base.edge.cmd.issue_1.0
+     * @clientApi  x.industry.base.edge.cmd.issue_1.0
      */
     AtopResult<IssueCmdResultVO> issueDeviceCommand(String uidForIOT, String deviceId, String cmdJson, ApiRequestDO apiRequestDO);
 
@@ -33,7 +29,7 @@ public interface ICmdIssueAtopService {
      * @param sn
      * @param apiRequestDO
      * @return
-     * @clientApi tuya.industry.base.edge.cmd.query_1.0
+     * @clientApi x.industry.base.edge.cmd.query_1.0
      */
     AtopResult<IssueDataCmdInfoVO> queryIssueDataCmd(Long sn, ApiRequestDO apiRequestDO);
 }

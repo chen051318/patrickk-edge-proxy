@@ -1,6 +1,6 @@
 package impl.stategy.strategy.impl.video;
 
-import com.tuya.edgegateway.atop.device.impl.strategy.impl.BaseReportDTO;
+import com.x.edgegateway.atop.device.impl.strategy.impl.BaseReportDTO;
 import lombok.Getter;
 import lombok.Setter;
 

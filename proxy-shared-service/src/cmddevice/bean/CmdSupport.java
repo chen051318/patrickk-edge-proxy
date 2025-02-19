@@ -3,7 +3,7 @@ package cmddevice.bean;
 import cmddevice.ICmd;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.annotation.JSONField;
-import com.tuya.edgegateway.client.common.BaseBean;
+import com.x.edgegateway.client.common.BaseBean;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -2,16 +2,8 @@ package cmdissue.instance.category.card;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.tuya.beehive.common.datapoint.converter.DataPointConverter;
-import com.tuya.edgegateway.client.domain.ndp.card.domain.CardReadVO;
-import com.tuya.edgegateway.client.domain.ndp.card.domain.CardWriteVO;
-import com.tuya.edgegateway.client.domain.ndp.card.domain.DeviceInfoVO;
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
-import com.tuya.edgegateway.manager.redis.RedisKeys;
 import cmdissue.instance.CmdIssueStrategy;
 import cmdissue.instance.DefaultCmdIssueInstance;
-import com.tuya.loki.client.LokiClient;
-import com.tuya.loki.core.util.ByteUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.StringUtils;
@@ -51,8 +43,8 @@ public class CardCmdIssueInstance extends DefaultCmdIssueInstance  implements In
                 return;
             }
 
-            //计算获取tuyaNum，sn-tuyaNum存入redis
-            int tuyaNum = getTuyaNum(cmdIssueDTO.getSn());
+            //计算获取xNum，sn-xNum存入redis
+            int xNum = getxNum(cmdIssueDTO.getSn());
 
             //data内容转byte，并base64
             String data = cmdIssueDTO.getData();
@@ -62,7 +54,7 @@ public class CardCmdIssueInstance extends DefaultCmdIssueInstance  implements In
             //dp指令下发
             Map<Integer, Object> map = new HashMap<>();
             if (StringUtils.equals("3", cmdIssueDTO.getDpid())) { //读取发卡器设备信息
-                DeviceInfoVO deviceInfoVO = new DeviceInfoVO(tuyaNum);
+                DeviceInfoVO deviceInfoVO = new DeviceInfoVO(xNum);
                 byte[] deviceInfoBytes = DataPointConverter.getInstance().convert(deviceInfoVO);
                 map.put(Integer.parseInt(cmdIssueDTO.getDpid()), Base64.encodeBase64String(deviceInfoBytes));
                 cmdIssueDTO.setData(JSON.toJSONString(map));
@@ -72,7 +64,7 @@ public class CardCmdIssueInstance extends DefaultCmdIssueInstance  implements In
 
             if (StringUtils.equals("1", cmdIssueDTO.getDpid())) { //读卡信息
                 CardReadVO cardReadVO = DataPointConverter.getInstance().convert(bytes, CardReadVO.class);
-                cardReadVO.setTuyaNum(tuyaNum);
+                cardReadVO.setxNum(xNum);
                 byte[] cardReadBytes = DataPointConverter.getInstance().convert(cardReadVO);
                 log.info("read card cmd: {}", Base64.encodeBase64String(cardReadBytes));
                 map.put(Integer.parseInt(cmdIssueDTO.getDpid()), Base64.encodeBase64String(cardReadBytes));
@@ -87,7 +79,7 @@ public class CardCmdIssueInstance extends DefaultCmdIssueInstance  implements In
             System.arraycopy(bytes, 0, cardHeadInfoByte, 0, 6);
 
             CardWriteVO cardHeadInfoVO = DataPointConverter.getInstance().convert(cardHeadInfoByte, CardWriteVO.class);
-            cardHeadInfoVO.setTuyaNum(tuyaNum);
+            cardHeadInfoVO.setxNum(xNum);
             //卡号的数据长度
             Integer datalength = cardHeadInfoVO.getDataLength();
 
@@ -109,27 +101,27 @@ public class CardCmdIssueInstance extends DefaultCmdIssueInstance  implements In
     }
 
     /**
-     * 获取从新计算涂鸦num ，sn缓存
+     * 获取从新计算num ，sn缓存
      *
      * @param sn
      * @return
      */
-    private int getTuyaNum(Long sn) {
-        //计算并获取tuyaNum
-        long tuyaNum0 = lokiClient.opsForValue().increment(RedisKeys.Card.CARD_TUYA_NUM_CACHE, 1);
-        //取模, 指令中涂鸦指令只有两个字节, 避免数字过大
-        tuyaNum0 = tuyaNum0 & 0xffff;
-        int tuyaNum = (int) tuyaNum0;
+    private int getxNum(Long sn) {
+        //计算并获取xNum
+        long xNum0 = lokiClient.opsForValue().increment(RedisKeys.Card.CARD_x_NUM_CACHE, 1);
+        //取模, 指令中指令只有两个字节, 避免数字过大
+        xNum0 = xNum0 & 0xffff;
+        int xNum = (int) xNum0;
 
-        //redis中保存tuyaNum和指令sn的映射关系
-        String key = String.format(RedisKeys.Card.CARD_SN_CACHE, tuyaNum);
+        //redis中保存xNum和指令sn的映射关系
+        String key = String.format(RedisKeys.Card.CARD_SN_CACHE, xNum);
         lokiClient.opsForValue().set(key, sn, SN_INTERVAL, TimeUnit.MINUTES);
-        return tuyaNum;
+        return xNum;
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        lokiClient.expire(RedisKeys.Card.CARD_TUYA_NUM_CACHE, 10, TimeUnit.DAYS);
-        log.info("CardCmdIssueInstance init tuyaNum redis expire time finish");
+        lokiClient.expire(RedisKeys.Card.CARD_x_NUM_CACHE, 10, TimeUnit.DAYS);
+        log.info("CardCmdIssueInstance init xNum redis expire time finish");
     }
 }

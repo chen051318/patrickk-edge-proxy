@@ -1,7 +1,7 @@
 package cmddevice.builders;
 
-import com.tuya.edgegateway.client.domain.ndp.common.IssueDataCmdBuilder;
-import com.tuya.edgegateway.client.domain.ndp.light.LightControl.*;
+import com.x.edgegateway.client.domain.ndp.common.IssueDataCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.light.LightControl.*;
 
 /**
  * @author patrickkk  2020/8/26 17:01

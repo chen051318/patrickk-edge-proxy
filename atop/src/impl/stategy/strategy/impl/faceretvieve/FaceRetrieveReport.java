@@ -1,12 +1,12 @@
 package impl.stategy.strategy.impl.faceretvieve;
 
 import com.alibaba.fastjson.JSON;
-import com.tuya.atop.client.domain.api.ApiRequestDO;
-import com.tuya.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
-import com.tuya.edgegateway.atop.device.impl.strategy.impl.AbstractReportProcessor;
-import com.tuya.edgegateway.client.domain.cmd.constants.CmdBizTypeEnum;
-import com.tuya.edgegateway.manager.ai.domain.EdgeFaceRetrieveDTO;
-import com.tuya.edgegateway.manager.base.exception.EdgeException;
+import com.x.atop.client.domain.api.ApiRequestDO;
+import com.x.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
+import com.x.edgegateway.atop.device.impl.strategy.impl.AbstractReportProcessor;
+import com.x.edgegateway.client.domain.cmd.constants.CmdBizTypeEnum;
+import com.x.edgegateway.manager.ai.domain.EdgeFaceRetrieveDTO;
+import com.x.edgegateway.manager.base.exception.EdgeException;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.stereotype.Service;

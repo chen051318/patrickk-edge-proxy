@@ -2,8 +2,8 @@ package cmddevice.bean;
 
 import cmddevice.ICmd;
 import com.google.common.base.Strings;
-import com.tuya.edgegateway.client.common.BaseBean;
-import com.tuya.edgegateway.client.common.ObjectUtils;
+import com.x.edgegateway.client.common.BaseBean;
+import com.x.edgegateway.client.common.ObjectUtils;
 import org.springframework.util.Assert;
 
 /**

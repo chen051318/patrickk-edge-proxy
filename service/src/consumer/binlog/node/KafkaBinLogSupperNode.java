@@ -1,6 +1,6 @@
 package consumer.binlog.node;
 
-import com.tuya.assembly.data.watch.client.domain.DataBaseFieldDO;
+import com.x.assembly.data.watch.client.domain.DataBaseFieldDO;
 
 import java.util.Map;
 

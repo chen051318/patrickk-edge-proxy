@@ -1,15 +1,6 @@
 package consumer;
 
 import com.google.common.collect.Sets;
-import com.tuya.assembly.data.watch.client.domain.DataBaseFieldDO;
-import com.tuya.assembly.data.watch.client.domain.DataBaseWatchDO;
-import com.tuya.basic.mq.domain.KafkaMqData;
-import com.tuya.kunlun.biz.chain.kafka.binlog.KafkaBinlogConsumerFactory;
-import com.tuya.kunlun.biz.listener.domain.DataBaseEventEnums;
-import com.tuya.kunlun.biz.manage.device.DeviceEsWriteManager;
-import com.tuya.kunlun.biz.manage.device.IDeviceOpManage;
-import com.tuya.kunlun.common.util.JsonUtilsV2;
-import com.tuya.quexie.trace.kafka.AbstractKafkaConsumer;
 import consumer.binlog.KafkaBinlogConsumerFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

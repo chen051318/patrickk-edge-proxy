@@ -1,7 +1,5 @@
 package cmdissue.instance;
 
-import com.tuya.edgegateway.integration.service.caesar.IDpPublishServiceClient;
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.annotation.Resource;

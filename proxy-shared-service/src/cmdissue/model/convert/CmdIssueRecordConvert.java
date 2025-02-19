@@ -1,12 +1,5 @@
 package cmdissue.model.convert;
 
-import com.tuya.edgegateway.client.domain.cmd.IssueCmdResultVO;
-import com.tuya.edgegateway.client.domain.ndp.common.ICmd;
-import com.tuya.edgegateway.client.domain.ndp.common.IssueDataCmd;
-import com.tuya.edgegateway.core.cmdissue.domain.CmdIssueRecordDO;
-import com.tuya.edgegateway.manager.base.utils.RetryUtils;
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
-import com.tuya.edgegateway.manager.device.domain.DeviceDTO;
 
 /**
  * @author patrickkk  2020/8/11 14:24

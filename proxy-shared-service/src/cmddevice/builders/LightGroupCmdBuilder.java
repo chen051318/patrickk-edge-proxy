@@ -2,7 +2,7 @@ package cmddevice.builders;
 
 import cmddevice.bean.AbstractCmdBuilder;
 import cmddevice.bean.LightGroupCmd;
-import com.tuya.edgegateway.client.domain.ndp.common.AbstractCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.common.AbstractCmdBuilder;
 import org.springframework.util.Assert;
 
 /**

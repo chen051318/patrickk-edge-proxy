@@ -2,13 +2,6 @@ package cmdissue.instance.category.znmj;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.tuya.dev.center.assist.client.face.domain.request.FaceFeatureRequest;
-import com.tuya.dev.center.assist.client.face.domain.vo.FaceFeatureVO;
-import com.tuya.edgegateway.client.domain.ndp.CmdBuilderFactory;
-import com.tuya.edgegateway.client.domain.ndp.common.ICmd;
-import com.tuya.edgegateway.client.domain.ndp.dc.faceinfo.FaceInfoDataAdd;
-import com.tuya.edgegateway.integration.service.assist.IFaceFeatureServiceClient;
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
 import cmdissue.instance.CmdIssueStrategy;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;

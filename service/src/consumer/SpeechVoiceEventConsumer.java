@@ -2,13 +2,13 @@ package consumer;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-import com.tuya.ai.speech.client.mq.SpeechVoiceEventDataWrapper;
-import com.tuya.basic.mq.domain.KafkaMqData;
-import com.tuya.hotel.biz.es.HotelDeviceEsService;
-import com.tuya.hotel.biz.es.HotelEsDeviceDO;
-import com.tuya.hotel.biz.roomdetection.IRoomDetectionRoomStatusBizService;
-import com.tuya.hotel.mq.dto.SpeechVoiceEventDTO;
-import com.tuya.vienna.monitor.kafka.AbstractKafkaConsumer;
+import com.x.ai.speech.client.mq.SpeechVoiceEventDataWrapper;
+import com.x.basic.mq.domain.KafkaMqData;
+import com.x.hotel.biz.es.HotelDeviceEsService;
+import com.x.hotel.biz.es.HotelEsDeviceDO;
+import com.x.hotel.biz.roomdetection.IRoomDetectionRoomStatusBizService;
+import com.x.hotel.mq.dto.SpeechVoiceEventDTO;
+import com.x.vienna.monitor.kafka.AbstractKafkaConsumer;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.annotation.Resource;
@@ -24,7 +24,7 @@ import java.util.Objects;
  *
  * 调用该接口的音响，5分钟内有人声识别，就会触发。
  *
- * @author chenzp@tuya.com patrickkk
+ * @author chenzp@x.com patrickkk
  * @since 2023/3/9 15:04
  **/
 @Slf4j

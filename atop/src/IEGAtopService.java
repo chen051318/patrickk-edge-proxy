@@ -1,12 +1,12 @@
-import com.tuya.arthas.client.domain.vo.datapoint.SchemaAnalyzeVO;
-import com.tuya.atop.client.domain.api.ApiRequestDO;
-import com.tuya.atop.client.domain.common.AtopResult;
-import com.tuya.edgegateway.atop.model.vo.DeviceVO;
-import com.tuya.edgegateway.atop.model.vo.FaceScoreVO;
-import com.tuya.edgegateway.atop.model.vo.GatewayVO;
-import com.tuya.edgegateway.atop.model.vo.UploadTokenVO;
-import com.tuya.edgegateway.client.common.PageResult;
-import com.tuya.edgegateway.client.domain.cmd.IssueDataCmdResponseVO;
+import com.x.arthas.client.domain.vo.datapoint.SchemaAnalyzeVO;
+import com.x.atop.client.domain.api.ApiRequestDO;
+import com.x.atop.client.domain.common.AtopResult;
+import com.x.edgegateway.atop.model.vo.DeviceVO;
+import com.x.edgegateway.atop.model.vo.FaceScoreVO;
+import com.x.edgegateway.atop.model.vo.GatewayVO;
+import com.x.edgegateway.atop.model.vo.UploadTokenVO;
+import com.x.edgegateway.client.common.PageResult;
+import com.x.edgegateway.client.domain.cmd.IssueDataCmdResponseVO;
 
 import java.util.List;
 
@@ -33,7 +33,7 @@ public interface IEGAtopService {
      * @param jsonData     设备数据集合 false
      * @param apiRequestDO the api request do
      * @return atop result
-     * @clientApi tuya.industry.base.eg.device.post
+     * @clientApi x.industry.base.eg.device.post
      * @clientVersion 1.0
      * @scribedescribe 接收边缘关网发送的设备同步数据
      * @invokeTimeout 10
@@ -50,7 +50,7 @@ public interface IEGAtopService {
      * @param data         发送的json数据的string表示(需同时相应数据场景) true
      * @param apiRequestDO the api request do
      * @return atop result
-     * @clientApi tuya.industry.base.eg.syncdata.result.post
+     * @clientApi x.industry.base.eg.syncdata.result.post
      * @clientVersion 1.0
      * @scribedescribe 上报指令下发 （数据同步类）执行结果
      * @invokeTimeout 5
@@ -64,7 +64,7 @@ public interface IEGAtopService {
      * @param input        请求id true
      * @param apiRequestDO the api request do
      * @return atop result
-     * @clientApi tuya.industry.base.edge.gateway.syncdata.type.result.post
+     * @clientApi x.industry.base.edge.gateway.syncdata.type.result.post
      * @clientVersion 1.0
      * @scribedescribe 接收本地边缘网关上传的文件id
      * @invokeTimeout 2
@@ -79,7 +79,7 @@ public interface IEGAtopService {
      * @param apiRequestDO the api request do
      * @return atop result
      * @appName edge -gateway-proxy
-     * @clientApi tuya.industry.base.eg.device.cid.query
+     * @clientApi x.industry.base.eg.device.cid.query
      * @clientVersion 1.0
      * @scribedescribe 根据cid查询设备
      * @invokeTimeout 5
@@ -93,7 +93,7 @@ public interface IEGAtopService {
      * @param gatewayId    网关id false
      * @param apiRequestDO the api request do
      * @return atop result
-     * @clientApi tuya.industry.base.edge.gateway.id.query
+     * @clientApi x.industry.base.edge.gateway.id.query
      * @clientVersion 1.0
      * @scribedescribe 根据网关id查询边缘网关对象
      * @invokeTimeout 5
@@ -108,7 +108,7 @@ public interface IEGAtopService {
      * @param limit        每页行数，最大100条 false
      * @param apiRequestDO the api request do
      * @return atop result
-     * @clientApi tuya.industry.base.edge.device.query.all
+     * @clientApi x.industry.base.edge.device.query.all
      * @clientVersion 1.0
      * @scribedescribe 设备查询
      * @invokeTimeout 5
@@ -124,7 +124,7 @@ public interface IEGAtopService {
      * @param limit        限制返回行数，最大100    false
      * @param apiRequestDO the api request do
      * @return atop result
-     * @clientApi tuya.industry.base.eg.syncdata.query_1.0
+     * @clientApi x.industry.base.eg.syncdata.query_1.0
      */
     @Deprecated
     AtopResult<List<IssueDataCmdResponseVO>> queryIssueDataCmd(Long startCursor, Integer limit, ApiRequestDO apiRequestDO);
@@ -136,7 +136,7 @@ public interface IEGAtopService {
      * @param apiRequestDO the api request do
      * @return atop result
      * @appName edge -gateway-proxy
-     * @clientApi tuya.industry.base.eg.device.query.schema
+     * @clientApi x.industry.base.eg.device.query.schema
      * @clientVersion 1.0
      * @scribedescribe 查询schema
      * @invokeTimeout 5
@@ -150,7 +150,7 @@ public interface IEGAtopService {
      * @param subjectType  the subject type
      * @param apiRequestDO the api request do
      * @return upload token
-     * @clientApi tuya.industry.base.edge.file.upload.token
+     * @clientApi x.industry.base.edge.file.upload.token
      * @clientVersion 1.0
      * @scribedescribe 设备查询
      * @invokeTimeout 5
@@ -164,7 +164,7 @@ public interface IEGAtopService {
      * @param fileId       上传文件后拿到的ID
      * @param apiRequestDO the api request do
      * @return FaceScoreVO 包括结果和图片url
-     * @clientApi tuya.industry.base.edge.ai.face.score
+     * @clientApi x.industry.base.edge.ai.face.score
      * @clientVersion 1.0
      * @scribedescribe 评估图片质量
      * @invokeTimeout 5
@@ -176,7 +176,7 @@ public interface IEGAtopService {
      * 上传算法视频的url给到算法那里
      *
      * @return
-     * @clientApi tuya.industry.base.edge.file.upload.alg
+     * @clientApi x.industry.base.edge.file.upload.alg
      * @clientVersion 1.0
      * @scribedescribe 设备查询
      * @invokeTimeout 5

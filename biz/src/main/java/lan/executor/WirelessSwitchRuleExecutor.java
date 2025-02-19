@@ -2,15 +2,15 @@
 package lan.executor;
 
 import com.google.common.collect.Lists;
-import com.tuya.jupiter.client.domain.linkage.vo.LinkageConditionVO;
-import com.tuya.jupiter.client.domain.linkage.vo.LinkageDeviceRuleShellVO;
-import com.tuya.luban.biz.enums.GatewayErrorEnum;
-import com.tuya.luban.biz.service.lan.domains.LanRecoverContext;
-import com.tuya.luban.biz.service.lan.domains.LinkageRule;
-import com.tuya.luban.biz.service.lan.domains.recover.params.SceneErrorParamsDTO;
-import com.tuya.luban.biz.service.lan.utils.ConvertUtil;
-import com.tuya.luban.client.enums.RuleConstant;
-import com.tuya.luban.integration.jupiter.ILinkageDeviceRuleShellIntegration;
+import com.x.jupiter.client.domain.linkage.vo.LinkageConditionVO;
+import com.x.jupiter.client.domain.linkage.vo.LinkageDeviceRuleShellVO;
+import com.x.luban.biz.enums.GatewayErrorEnum;
+import com.x.luban.biz.service.lan.domains.LanRecoverContext;
+import com.x.luban.biz.service.lan.domains.LinkageRule;
+import com.x.luban.biz.service.lan.domains.recover.params.SceneErrorParamsDTO;
+import com.x.luban.biz.service.lan.utils.ConvertUtil;
+import com.x.luban.client.enums.RuleConstant;
+import com.x.luban.integration.jupiter.ILinkageDeviceRuleShellIntegration;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 

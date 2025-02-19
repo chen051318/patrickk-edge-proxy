@@ -3,15 +3,15 @@ package lan.utils;
 
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
-import com.tuya.asgard.client.domain.relation.vo.ImportDeviceVO;
-import com.tuya.asgard.client.domain.relation.vo.ImportRoomVO;
-import com.tuya.athena.client.domain.relation.DeviceTopoRelationVO;
-import com.tuya.jupiter.client.domain.group.vo.MultiControlDetailVO;
-import com.tuya.jupiter.client.domain.group.vo.MultiControlGroupVO;
-import com.tuya.jupiter.client.domain.linkage.vo.LinkageConditionVO;
-import com.tuya.jupiter.client.domain.linkage.vo.LinkageDeviceRuleShellVO;
-import com.tuya.luban.biz.service.lan.domains.*;
-import com.tuya.luban.biz.service.linkagerule.domain.LinkageRuleReqDTO;
+import com.x.asgard.client.domain.relation.vo.ImportDeviceVO;
+import com.x.asgard.client.domain.relation.vo.ImportRoomVO;
+import com.x.athena.client.domain.relation.DeviceTopoRelationVO;
+import com.x.jupiter.client.domain.group.vo.MultiControlDetailVO;
+import com.x.jupiter.client.domain.group.vo.MultiControlGroupVO;
+import com.x.jupiter.client.domain.linkage.vo.LinkageConditionVO;
+import com.x.jupiter.client.domain.linkage.vo.LinkageDeviceRuleShellVO;
+import com.x.luban.biz.service.lan.domains.*;
+import com.x.luban.biz.service.linkagerule.domain.LinkageRuleReqDTO;
 import org.apache.commons.collections.CollectionUtils;
 
 import java.util.List;

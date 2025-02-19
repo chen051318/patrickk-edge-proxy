@@ -1,6 +1,6 @@
 package impl.stategy.strategy.impl.faceretvieve;
 
-import com.tuya.edgegateway.atop.device.impl.strategy.impl.BaseReportDTO;
+import com.x.edgegateway.atop.device.impl.strategy.impl.BaseReportDTO;
 import lombok.Data;
 
 import java.util.List;

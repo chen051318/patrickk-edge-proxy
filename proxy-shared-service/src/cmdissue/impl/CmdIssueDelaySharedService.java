@@ -1,28 +1,8 @@
 package cmdissue.impl;
 
-import com.tuya.edgegateway.client.domain.cmd.constants.ProcessStatusEnum;
-import com.tuya.edgegateway.core.cmdissue.domain.CmdIssueUpdateCondition;
-import com.tuya.edgegateway.core.util.apollo.ApolloConfigUtil;
-import com.tuya.edgegateway.core.util.sensitivelog.LogMarkers;
-import com.tuya.edgegateway.integration.service.athena.IDeviceMServiceClient;
-import com.tuya.edgegateway.integration.service.sigmax.IGrpcConsumerServiceClient;
-import com.tuya.edgegateway.manager.base.constants.DelayMsgTypeEnum;
-import com.tuya.edgegateway.manager.base.model.CmdIssueDelayDTO;
-import com.tuya.edgegateway.manager.cfg.ProductCfgManager;
-import com.tuya.edgegateway.manager.cfg.domain.ProductCfgDTO;
-import com.tuya.edgegateway.manager.cmdissue.ICmdIssueManager;
-import com.tuya.edgegateway.manager.cmdissue.domain.CmdIssueRecordDTO;
-import com.tuya.edgegateway.manager.kafka.domain.KafkaCmdResultMessage;
-import com.tuya.edgegateway.manager.kafka.domain.dto.pulsar.PulsarCmdResultDTO;
-import com.tuya.edgegateway.manager.kafka.domain.message.pulsar.KafkaPulsarCmdResultMessage;
-import com.tuya.edgegateway.manager.kafka.producer.IKafkaMsgProducer;
-import com.tuya.edgegateway.manager.kafka.producer.IKafkaPulsarProducer;
-import com.tuya.edgegateway.manager.redis.impl.EdgeLockHelper;
 import cmdissue.ICmdIssueDelaySharedService;
 import cmdissue.instance.CmdIssueFactory;
 import cmdissue.instance.ICmdIssueInstance;
-import com.tuya.edgegateway.shared.service.device.IDeviceSharedService;
-import com.tuya.loki.client.LokiClient;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
@@ -169,7 +149,7 @@ public class CmdIssueDelaySharedService implements ICmdIssueDelaySharedService {
             }
 
             //todo aipad门禁走特殊逻辑
-            if (StringUtils.equals("wf_znmj", productType) && StringUtils.equals("tuya", vendorCode)
+            if (StringUtils.equals("wf_znmj", productType) && StringUtils.equals("x", vendorCode)
                     && StringUtils.equals("128", cmdIssueDTO.getDpid())) {
                 //数据同步到酒店, 门禁主动拉取指令
                 ICmdIssueInstance cmdIssueInstance = cmdIssueFactory.getInstance(productType, vendorCode);

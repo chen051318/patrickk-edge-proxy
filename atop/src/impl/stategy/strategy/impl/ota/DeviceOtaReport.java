@@ -1,12 +1,12 @@
 package impl.stategy.strategy.impl.ota;
 
 import com.alibaba.fastjson.JSON;
-import com.tuya.atop.client.domain.api.ApiRequestDO;
-import com.tuya.edgegateway.atop.device.impl.strategy.IDeviceReport;
-import com.tuya.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
-import com.tuya.edgegateway.common.model.DeviceStrategy;
-import com.tuya.edgegateway.manager.cmdissue.domain.IssueDataCmdResultDTO;
-import com.tuya.edgegateway.shared.service.cmdissue.ICmdIssueSharedService;
+import com.x.atop.client.domain.api.ApiRequestDO;
+import com.x.edgegateway.atop.device.impl.strategy.IDeviceReport;
+import com.x.edgegateway.atop.device.impl.strategy.annotation.EdgeStrategy;
+import com.x.edgegateway.common.model.DeviceStrategy;
+import com.x.edgegateway.manager.cmdissue.domain.IssueDataCmdResultDTO;
+import com.x.edgegateway.shared.service.cmdissue.ICmdIssueSharedService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

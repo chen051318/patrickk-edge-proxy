@@ -1,12 +1,12 @@
 package cmddevice.builders;
 
-import com.tuya.edgegateway.client.domain.ndp.common.IssueDataCmdBuilder;
-import com.tuya.edgegateway.client.domain.ndp.ec.cmd.ElevatorControlCmdBuilder;
-import com.tuya.edgegateway.client.domain.ndp.ec.cmd.FloorAuthGroupCmdBuilder;
-import com.tuya.edgegateway.client.domain.ndp.ec.cmd.cardinfo.*;
-import com.tuya.edgegateway.client.domain.ndp.ec.cmd.faceinfo.*;
-import com.tuya.edgegateway.client.domain.ndp.ec.cmd.qrcodeinfo.*;
-import com.tuya.edgegateway.client.domain.ndp.ec.cmd.userinfo.*;
+import com.x.edgegateway.client.domain.ndp.common.IssueDataCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.ec.cmd.ElevatorControlCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.ec.cmd.FloorAuthGroupCmdBuilder;
+import com.x.edgegateway.client.domain.ndp.ec.cmd.cardinfo.*;
+import com.x.edgegateway.client.domain.ndp.ec.cmd.faceinfo.*;
+import com.x.edgegateway.client.domain.ndp.ec.cmd.qrcodeinfo.*;
+import com.x.edgegateway.client.domain.ndp.ec.cmd.userinfo.*;
 
 /**
  *
